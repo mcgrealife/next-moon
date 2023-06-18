@@ -3,6 +3,7 @@ import Timer from './Timer'
 import './globals.css'
 import Music from './Music'
 import Script from 'next/script'
+// import Views from './Views'
 
 export const metadata = {
   title: 'Next.js Moon',
@@ -17,15 +18,16 @@ export default function RootLayout({
   return (
     <html lang='en' className='bg-black'>
       <body>
+        {/* <Views /> */}
         {children}
         {/* <Script
           src='https://static.cloudflareinsights.com/beacon.min.js'
           data-cf-beacon='{"token": "b889a3aa44e0432f9882d9e6578d1628"}'
         /> */}
-        <script
+        {/* <script
           defer
           src='https://static.cloudflareinsights.com/beacon.min.js'
-          data-cf-beacon='{"token": "b889a3aa44e0432f9882d9e6578d1628"}'></script>
+          data-cf-beacon='{"token": "b889a3aa44e0432f9882d9e6578d1628"}'></script> */}
       </body>
     </html>
   )
